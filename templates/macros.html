@@ -2,6 +2,8 @@
 {% macro head() %}
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,13 +32,14 @@
         <span class="site-description">{{ config.extra.user_title | linebreaksbr | safe }}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="Send email" href="mailto:info@bytearchitect.io"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/gbiondo/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/gb_at_r3"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+       <!-- <a aria-label="My Fiverr" target="_blank" href="#"><i class="icon fa fa-briefcase" aria-hidden="true"></i></a>i -->
+        <a aria-label="My Github" target="_blank" href="https://github.com/gb-at-r3"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
       </div>
       <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#about" data-scroll>Patterns</a>
         <a class="link" href="#projects" data-scroll>Projects</a>
       </div>
   </div>

@@ -1,65 +1,101 @@
 {% macro about() %}
- <div class="user-details">
-  <h1> My Expertise </h1>
-  <p> {{ config.extra.user_description }} </p>
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+<section class="about" id="patterns">
+  <h1>Patterns</h1>
+  <div class="about-container">
+
+    <div class="about-block">
+      <h3><i class="fa-regular fa-snowflake"></i> Structures Before Colors</h3>
+      <p>I don’t code to solve problems.<br>
+      I design structures in which problems cease to exist.</p>
     </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+
+    <div class="about-block">
+      <h3><i class="fa-solid fa-arrows-to-dot"></i> Back to the Origin</h3>
+      <p>If I cannot reverse it, I hardly trust it.<br>
+      Understanding begins where documentation ends.</p>
     </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+
+    <div class="about-block">
+      <h3><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Boundaries First</h3>
+      <p>I test boundaries — logical, physical, human.<br>
+      Systems fail at the edge. That’s where I start.</p>
     </div>
-</div>
+
+    <div class="about-block">
+      <h3><i class="fa-solid fa-volume-high"></i> Noise Is the Enemy</h3>
+      <p>I remove what doesn’t matter.<br>
+      Every layer without meaning is an attack surface.</p>
+    </div>
+
+  </div>
+</section>
 {% endmacro about %}
 
 {% macro projects() %}
+
 <div class="user-details">
   <h1> Featured Projects </h1>
 </div>
+
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="RevEng3" src="{{ config.base_url ~ "/img/reveng3.jpg" }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3>RevEng3</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li>Penetration Testing</li>
+      <li>Reverse Engineering</li>
+      <li>Deceptive Security</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>
+      Security as structure, not service.  
+      Offensive engineering, deceptive defence, system-level resilience.  
+      Includes Ariadne and Pazuzu — advanced research meets real threats.
+    </p>
+    <a class="project-link" href="https://www.reveng3.org" target="_blank">Explore</a>
   </div>
 </div>
+
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="Harmonic Bytes" src="{{ config.base_url ~ "/img/harmonic.jpg" }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3>Harmonic Bytes</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li>Music & DSP</li>
+      <li>Perception</li>
+      <li>Computational Theory</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>
+      Where sound meets math.  
+      Explorations in timbre, aliasing, sampling and perception.  
+      A blog for those who see the waveform beneath the noise.
+    </p>
+    <a class="project-link" href="https://harmonic-bytes.blog" target="_blank">Enter</a>
   </div>
 </div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="Labyrinths" src="{{ config.base_url ~ "/img/labyrinth.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3>Labyrinths</h3>
+    <ul>
+      <li>Codex ex Machina</li>
+      <li>Symbolic Deception</li>
+      <li>Recursive Access</li>
+    </ul>
+    <p>
+      The philosophical layer of ByteArchitect.  
+      Codex ex Machina is a symbolic system — a cryptographic belief model.  
+      To enter is as hard as to leave. The key is in the structure.
+    </p>
+    <a class="project-link" href="#">[Access Unavailable]</a>
+  </div>
+</div>
+
 {% endmacro projects %}
 
